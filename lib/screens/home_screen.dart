@@ -13,9 +13,10 @@ class HomeScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Image(
-                image: AssetImage('assets/images/home_checklist.png'),
-                width: 250.0,
-                height: 250.0),
+              image: AssetImage('assets/images/home_checklist.png'),
+              width: 250.0,
+              height: 250.0,
+            ),
             Text(
               'What do you want to do today?',
               style: GoogleFonts.lato(
@@ -32,7 +33,7 @@ class HomeScreen extends StatelessWidget {
                 fontWeight: FontWeight.w400,
                 color: Colors.white,
               ),
-            )
+            ),
           ],
         ),
       ),

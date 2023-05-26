@@ -152,32 +152,35 @@ class BottomNavBar extends StatelessWidget {
                       const SizedBox(height: 10.0),
                       Padding(
                         padding: const EdgeInsets.symmetric(
-                          horizontal: 10.0,
                           vertical: 10.0,
                         ),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            SizedBox(
-                              width: MediaQuery.of(context).size.width * 0.3,
-                              child: Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  SvgPicture.asset(
+                            Row(
+                              children: [
+                                IconButton(
+                                  onPressed: () {},
+                                  icon: SvgPicture.asset(
                                     'assets/icons/timer.svg',
                                     width: 25.0,
                                   ),
-                                  SvgPicture.asset(
+                                ),
+                                IconButton(
+                                  onPressed: () {},
+                                  icon: SvgPicture.asset(
                                     'assets/icons/tag.svg',
                                     width: 25.0,
                                   ),
-                                  SvgPicture.asset(
+                                ),
+                                IconButton(
+                                  onPressed: () {},
+                                  icon: SvgPicture.asset(
                                     'assets/icons/flag.svg',
                                     width: 25.0,
                                   ),
-                                ],
-                              ),
+                                ),
+                              ],
                             ),
                             SizedBox(
                               child: SvgPicture.asset(
